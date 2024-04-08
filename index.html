@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px; /* Adjusted gap for better spacing */
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 300px; /* Fixed width */
+        margin: 10px;
+        text-align: center;
+        font-family: arial;
+        flex: 1 0 auto; /* Flex grow, flex shrink and flex basis set */
+        height: auto; /* Auto height for flexibility */
+        overflow: hidden; /* Ensure content fits in the card */
+      }
+
+      .card-content {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1; /* Allow the content to grow */
+      }
+
+      .card-content img {
+        width: 100%; /* Ensure image covers the width */
+        height: auto; /* Adjust height automatically */
+      }
+
+      .price {
+        color: grey;
+        font-size: 18px;
+      }
+
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 15px;
+      }
+
+      .card button:hover {
+        opacity: 0.7;
+      }
+
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      .navbar button {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .navbar button:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">candy store-Tingchen Tsao</h2>
+
+    <div class="navbar">
+      <button onclick="window.location.href='index.html'">Index</button>
+      <button onclick="window.location.href='honesty.html'">Honesty</button>
+      <button onclick="window.location.href='about.html'">About</button>
+      <button onclick="window.location.href='product_register.html'">Product_register</button>
+      <button onclick="window.location.href='reflection.html'">Reflection</button>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-content">
+          <img
+            src="/image/yes-and-studio-XVYz_QeiEBw-unsplash.jpg"
+            alt="Candy"
+            style="width: 100%"
+          />
+          <h1>Gummy worm</h1>
+          <p class="price">$6.99</p>
+          <p>
+            Gummy worms (also called Gummi Worms ) are a type of worm-shaped gummy candy. They are
+            made from a mixture of sugar, corn syrup, gelatin, and flavorings.
+          </p>
+        </div>
+        <p><button>Add to Cart</button></p>
+      </div>
+      <div class="card">
+        <img src="/image/amit-lahav-LU_fCezP9-o-unsplash.jpg" alt="Candy" style="width: 100%" />
+        <h1>Gummy bear</h1>
+        <p class="price">$5.99</p>
+        <p>
+          Gummy bears (German: Gummibär) are small, fruit gum candies, similar to a jelly baby in
+          some English-speaking countries.
+        </p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      <div class="card">
+        <img src="/image/deidre-schlabs-3JpjkYw3Xb4-unsplash.jpg" alt="Candy" style="width: 100%" />
+        <h1>Heart shaped Marshmallows</h1>
+        <p class="price">$7.99</p>
+        <p>
+          Marshmallows in the shape of hearts are the perfect sweet treat to celebrate Valentine's
+          Day.
+        </p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      <div class="card">
+        <img
+          src="/image/jacqueline-brandwayn-FYNs98upHrA-unsplash.jpg"
+          alt="Candy"
+          style="width: 100%"
+        />
+        <h1>Heart shaped red gummy</h1>
+        <p class="price">$7.99</p>
+        <p>
+          These adorable heart-shaped candies are soft, chewy, and coloured red & pink for a festive
+          Valentine touch. Each gummy is bursting with fruity raspberry flavour!
+        </p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      <div class="card">
+        <img src="/image/jamie-albright-AHF_ZktTL6Q-unsplash.jpg" alt="Candy" style="width: 100%" />
+        <h1>Lollipop</h1>
+        <p class="price">$8.99</p>
+        <p>
+          type of sugar candy usually consisting of hard candy mounted on a stick and intended for
+          sucking or licking.
+        </p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      <div class="card">
+        <img
+          src="/image/karsten-winegeart-iBv4UUvKlb4-unsplash.jpg"
+          alt="Candy"
+          style="width: 100%"
+        />
+        <h1>Banana hard candy mix</h1>
+        <p class="price">$3.99</p>
+        <p>
+          Banana hard mixed candy is a tasty and satisfying treat that is perfect for satisfying a
+          sweet tooth.
+        </p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      <div class="card">
+        <img src="/image/nora-topicals-AFjGrDq9VkI-unsplash.jpg" alt="Candy" style="width: 100%" />
+        <h1>Fruity gummy</h1>
+        <p class="price">$12.99</p>
+        <p>
+          Fruit Flavored Immune Support Gummies are naturally flavored and come in mixed berry and
+          citrus flavors. Each serving (3 gummies) contains 750 mg of Vitamin C and a crafted blend
+          of nine vitamins, minerals, and herbs.
+        </p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      <div class="card">
+        <img
+          src="/image/sarah-takforyan-PqGKPKyh-q4-unsplash.jpg"
+          alt="Candy"
+          style="width: 100%"
+        />
+        <h1>Strawberry gummy</h1>
+        <p class="price">$6.99</p>
+        <p>
+          These strawberry gummies are bursting with flavor because they are made from real fruit!
+          The fruit juice flavors give them a tasty strawberry lemonade taste
+        </p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      <div class="card">
+        <img
+          src="/image/towfiqu-barbhuiya-33taMhUiF0I-unsplash.jpg"
+          alt="Candy"
+          style="width: 100%"
+        />
+        <h1>Rolled up gummy</h1>
+        <p class="price">$7.99</p>
+        <p>
+          It is a flat, corn syrup-based, fruit-flavored snack rolled into a tube, spread on a
+          backing sheet of cellophane to prevent the product from sticking to itself.
+        </p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      <div class="card">
+        <img src="/image/amit-lahav-3oDQKoKPMng-unsplash.jpg" alt="Candy" style="width: 100%" />
+        <h1>Smarties</h1>
+        <p class="price">$4.99</p>
+        <p>
+          Smarties are the famous coated chocolate confectionery packed with SMART ideas for a more
+          colorful world. They're all about color and imagination.
+        </p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </body>
+</html>
